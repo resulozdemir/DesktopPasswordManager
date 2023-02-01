@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFEA7334-205B-42F5-93A7-F5639A7C8763}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sifreKayitUygulamasi</RootNamespace>
+    <AssemblyName>sifreKayitUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Discord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discord.Designer.cs">
+      <DependentUpon>Discord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisPaneli.Designer.cs">
+      <DependentUpon>girisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GitHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GitHub.Designer.cs">
+      <DependentUpon>GitHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gmail.Designer.cs">
+      <DependentUpon>Gmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instagram.Designer.cs">
+      <DependentUpon>Instagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitOl.Designer.cs">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Linkedln.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Linkedln.Designer.cs">
+      <DependentUpon>Linkedln.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nasilKullanilir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nasilKullanilir.Designer.cs">
+      <DependentUpon>nasilKullanilir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Netflix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Netflix.Designer.cs">
+      <DependentUpon>Netflix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outlook.Designer.cs">
+      <DependentUpon>Outlook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifreSifirla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreSifirla.Designer.cs">
+      <DependentUpon>sifreSifirla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Steam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Steam.Designer.cs">
+      <DependentUpon>Steam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Twitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Twitter.Designer.cs">
+      <DependentUpon>Twitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom.Designer.cs">
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Discord.resx">
+      <DependentUpon>Discord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisPaneli.resx">
+      <DependentUpon>girisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GitHub.resx">
+      <DependentUpon>GitHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gmail.resx">
+      <DependentUpon>Gmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instagram.resx">
+      <DependentUpon>Instagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitOl.resx">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Linkedln.resx">
+      <DependentUpon>Linkedln.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nasilKullanilir.resx">
+      <DependentUpon>nasilKullanilir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Netflix.resx">
+      <DependentUpon>Netflix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outlook.resx">
+      <DependentUpon>Outlook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sifreSifirla.resx">
+      <DependentUpon>sifreSifirla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Steam.resx">
+      <DependentUpon>Steam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Twitter.resx">
+      <DependentUpon>Twitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom.resx">
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
