@@ -1,2 +1,2 @@
-# MasaustuSifreKayitUygulamasi
-C# Form ve Micrasoft Access veri tabanı kullanılarak yapılmış masaüstü şifre kayıt uygulaması
+# DesktopPasswordManager
+Desktop password recording application made using C# Form and Microsoft Access database
